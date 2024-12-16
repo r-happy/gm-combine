@@ -6,7 +6,7 @@ RUN apt-get update && apt-get install -y git
 
 RUN git clone https://github.com/mi875/gm-frontend.git .
 
-COPY .env /app/gm-frontend/.env
+COPY .env /app/.env
 
 WORKDIR /app/gm-frontend
 
