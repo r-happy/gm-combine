@@ -23,3 +23,7 @@ services:
 
 volumes:
   db_data:
+
+networks:
+  gm-network:
+    name: gm-network  # 明示的に名前を指定
