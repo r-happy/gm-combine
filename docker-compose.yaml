@@ -7,6 +7,8 @@ services:
       - "3000:3000"
     depends_on:
       - backend
+    networks:
+      - gm-network
 
   backend:
     build:
@@ -16,6 +18,8 @@ services:
       - "1323:1323"
     volumes:
       - db_data:/app/src/db
+    networks:
+      - gm-network
 
 volumes:
   db_data:
