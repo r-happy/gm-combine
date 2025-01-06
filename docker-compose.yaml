@@ -9,6 +9,7 @@ services:
       - backend
     networks:
       - gm-network
+    restart: always
 
   backend:
     build:
@@ -20,6 +21,7 @@ services:
       - db_data:/app/src/db
     networks:
       - gm-network
+    restart: always
 
 volumes:
   db_data:
